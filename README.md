@@ -14,5 +14,6 @@ An ASP.NET Core WebAPI (.NET 8) for digitalising a restaurant: Includes user man
 # Quick Start
 
 1. Clone the Repository and navigate to the project directory.
-2. Configure appsettings.json: Add your JWT signing key and update the SQL Server connection string.
-3. Run the Application: Use dotnet run to start in development mode, with initial seeding of roles and test users.
+2. Configure `appsettings.json`: Add your JWT signing key and update the SQL Server connection string.
+3. Apply initial migration to your configured DB using `dotnet ef database update`.
+4. Run the Application: Use `dotnet run` to start in development mode, with initial seeding of test users (one for each role).
